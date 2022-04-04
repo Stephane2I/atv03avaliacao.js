@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Avaliação de JS Prática</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        hr{
+            display: none;
+        }
+        legend{
+            font-size: 19px;
+        }
+        label{
+            font-size: 16px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        textarea{
+            width: 500px;
+            height: 60px;
+            border-radius: 10px;
+            border: 4px solid black;
+            background-color: #F0FFF0;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            border: 4px solid black;
+            background-color: #F0FFF0;
+            font-size: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        button:hover{
+            width: 130px;
+            height: 40px;
+            background-color: white;
+            border: 4px solid white;
+        }
+        form{
+            width: 100%;
+            background-color: #FFE4E1;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center><form>                                                  
+        <fieldset>
+            <strong><legend>1. Quais cursos são ofertados na EEEP Amélia Figueiredo de Lavor?</legend></strong>
+            <textarea  type="text" id="texto">
+                
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <strong><legend>2. Marque as opções que possui os sistemas de numerações novos que aprendemos no 1º de Informática.</legend></strong>
+                <p>
+                <label for="octal">Sistema Octal</label>
+                <input type="checkbox" id="octal">
+                <p>
+                <label for="bina">Sistema Binário</label>
+                <input type="checkbox" id="bina">
+                <p>
+                <label for="deci">Sistema Decimal</label>
+                <input type="checkbox" id="deci">
+                <p>
+                <label for="hexa">Algarismos Hexadecimal</label>
+                <input type="checkbox" id="hexa">
+        </fieldset>
+        <fieldset>
+            <strong><legend>3. Qual o produto abaixo é mais adequado para limpar uma memória RAM?</legend></strong>
+            <p>
+            <label for="alc">Álcool Isopropílico</label>
+            <input type="radio" name="produto" id="alc">
+            <p>
+            <label for="limpa">Limpa Contato</label>
+            <input type="radio" name="produto" id="limpa">
+            <p>
+            <label for="alcl70">Álcool 70%</label>
+            <input type="radio" name="produto" id="alcl70">
+            <p>
+            <label for="agua">Água</label>
+            <input type="radio" name="produto" id="agua">
+        </fieldset>
+        <fieldset>
+            <strong><legend>4. Podemos afirmar que o modo de funcionamento de memória RAM em DUAL CHANEL só pode ser feito com pares de módulos de memória. Marque se a afirmação é verdade ou falsa.</legend></strong>
+            <p>
+            <label for="true">Verdadeira</label>
+            <input type="radio" name="logico" id="true">
+            <p>
+            <label for="false">Falsa</label>
+            <input type="radio" name="logico" id="false">
+            <p>
+        </fieldset>
+
+        <p><button type="button" onclick="pegarDados()">Corrigir</button></p>
+
+    </form>
+
+    <hr>
+    <div class="hide">RESUMO</div>
+    <div id="camText"></div>
+    <div id="campoOctal"></div>
+    <div id="campoBina"></div>
+    <div id="campoDeci"></div>
+    <div id="campoHexa"></div>
+    <div id="camRadio"></div>
+    <div id="camRadio2"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
